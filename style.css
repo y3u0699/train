@@ -71,4 +71,78 @@ h2{
     font-weight: bold;
     margin-bottom: 6px;
 }
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-color: #f5f6f7;
+    margin: 0;
+   
+}
+
+/* Header */
+
+.header-bar {
+
+    width: 96%;          /* 不要滿版 */
+
+    height:15px;
+
+    background-color: #003366;
+
+    position: relative;
+
+    top: 58px;         /* 往下 */
+
+    left: 2%;            /* 置中 */
+
+    border-radius: 5px;  /* 圓角 */
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+    z-index: 1000;
+
+}
+
+/* 卡片 */
+
+.card {
+    background-color: white;
+    width: 90%;
+    max-width: 520px;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* Logo */
+
+.logo-img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+h2{
+    color: #003366;
+    margin: 0 0 10px 0;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.message {
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.progress-text {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
 
