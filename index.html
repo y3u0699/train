@@ -2,35 +2,64 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>臺鐵訂票系統等候頁面</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header-container">
-    <img src="TRC_logo_1.png" class="header-logo">
-    <div class="header-bar"></div>
-</div>
-<div class="marquee-bar">
-    <div class="marquee-text">
-        【公告】※請旅客認明本公司官方網站(網址：https://www.railway.gov.tw)及「台鐵e訂通」APP，並切勿使用非正版管道進行本公司車票交易，以避免權益受損。
-    </div>
-</div>
-<div class="card">
-    <img src="tra-logo.png" class="logo-img">
-    <h2>購票系統忙碌中</h2>
-    <div class="message">
-        因目前連線人數過多，正在緊急疏導流量，<br>
-        請耐心等候，或點擊下方按鈕刷新狀態。<br>
-        若有任何問題，請撥打客服專線或參考下方聯絡資訊。
-    </div>
-    <div class="contact">
-    <div class="contact-title">聯絡客服</div>
-    臺鐵公司客服中心電話<br>
-    客服電話（一般服務諮詢及旅客申訴）：<br>
-    0800-765-888（限市內電話）<br>
-    02-21910096（手機）<br>
-    24小時緊急通報電話：1933
-</div>
-    </div>
-    </body>
-    </html>
+
+    <header>
+        <div class="header-container">
+            <img src="TRC_logo_1.png" alt="台鐵 Logo">
+            <div class="header-bar"></div>
+        </div>
+    </header>
+
+    <section class="marquee-area">
+        <p>【公告】※請旅客認明本公司官方網站及「台鐵e訂通」APP，並切勿使用非正版管道進行本公司車票交易。</p>
+    </section>
+
+    <main class="card">
+        <img src="tra-logo.png" alt="台鐵標誌">
+        <h2>購票系統忙碌中</h2>
+
+        <div class="message-box">
+            <p>因目前連線人數過多，正在緊急疏導流量，</p>
+            <p>請耐心等候，或點擊下方按鈕刷新狀態。</p>
+        </div>
+
+        <div class="status-area">
+            <p>進度：<span id="percent">0%</span></p>
+            
+            <div class="train-track">
+                <div class="poles-container">
+                    </div>
+                <div id="train">
+                    <img src="train.png" alt="火車圖示">
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="timer-area">
+            <p>預估等待時間：</p>
+            <p id="timer-display">計算中...</p>
+        </div>
+
+        <div id="arrivalMessage" style="display: none;">
+            🚉 即將進站，請準備
+        </div>
+
+        <button type="button">重新整理</button>
+
+        <footer class="contact-info">
+            <h3>聯絡客服</h3>
+            <p>客服電話：0800-765-888（限市內電話）、02-21910096（手機）</p>
+            <p>24小時緊急通報電話：1933</p>
+        </footer>
+    </main>
+
+</body>
+</html>
